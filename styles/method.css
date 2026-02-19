@@ -5,7 +5,7 @@
 .hero {
   height: calc(100vh - 70px);
 
-  background: url("../public/equipe.webp") center right / cover no-repeat;
+  background: url("../public/methode.webp") center right / cover no-repeat;
 
   display: flex;
   align-items: center;
@@ -45,7 +45,6 @@
   margin-bottom: 55px;
   opacity: 0.8;
 }
-
 
 /* Method */
 
