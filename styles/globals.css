@@ -26,3 +26,11 @@ h6,
 p {
   margin: 0;
 }
+
+a {
+  color: #333;
+}
+
+.active {
+  color: #efbe28;
+}
