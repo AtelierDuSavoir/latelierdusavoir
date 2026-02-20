@@ -116,3 +116,23 @@ main::after {
   font-family: "Raleway Semi-Bold";
   padding-block: 8px;
 }
+
+@media (width < 768px) {
+  main::before,
+  main::after {
+    left: 6%;
+  }
+
+  .method-title {
+    padding-bottom: 32px;
+  }
+
+  .method {
+    grid-template-columns: 1fr;
+    padding: 24px 8px 24px 48px;
+  }
+
+  .method img {
+    display: none;
+  }
+}
