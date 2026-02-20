@@ -85,7 +85,7 @@ main::after {
   --opacity-in: 1;
 
   display: grid;
-  column-gap: 64px;
+  gap: 64px;
   opacity: 0;
   padding: 24px 10%;
   grid-template-columns: 1fr 1fr;
@@ -100,9 +100,11 @@ main::after {
   gap: 8px;
   border-radius: 8px;
   line-height: 1.4;
+  text-align: justify;
 }
 
 .method hgroup h3,
 .method hgroup p:last-of-type {
   font-family: "Raleway Semi-Bold";
+  padding-block: 8px;
 }
