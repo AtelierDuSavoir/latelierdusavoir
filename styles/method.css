@@ -48,6 +48,13 @@
 
 /* Method */
 
+.method-title {
+  text-align: center;
+  padding: 80px 0;
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
 main {
   position: relative;
   height: 1500px;
