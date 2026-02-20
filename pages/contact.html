@@ -13,46 +13,42 @@
       <img src="../public/LogoP.webp" alt="Logo de l'Atelier du Savoir" />
 
       <ul>
-        <li><a href="/index.html" class="active">Accueil</a></li>
+        <li><a href="/index.html">Accueil</a></li>
         <li><a href="/pages/method.html">Notre méthode</a></li>
         <li><a href="/pages/productions.html">Nos productions</a></li>
         <li><a href="/pages/equipe.html">Notre équipe</a></li>
-        <li><a href="/pages/contact.html">Contact</a></li>
+        <li><a href="/pages/contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
 
     <section class="contact">
-  <div class="contact-container">
+      <div class="contact-container">
+        <h2 class="contact-title">
+          Vous souhaitez être contacté par notre équipe ?
+        </h2>
 
-    <h2 class="contact-title">
-      Vous souhaitez être contacté par notre équipe ?
-    </h2>
+        <p class="contact-subtitle">
+          Un projet, un devis, une question, une demande particulière…
+        </p>
 
-    <p class="contact-subtitle">
-      Un projet, un devis, une question, une demande particulière…
-    </p>
+        <form class="contact-form">
+          <input
+            type="email"
+            name="email"
+            placeholder="Entrez votre adresse mail..."
+            required
+          />
 
-    <form class="contact-form">
+          <textarea
+            name="message"
+            placeholder="Décrivez-nous votre besoin..."
+            rows="5"
+            required
+          ></textarea>
 
-      <input 
-        type="email" 
-        name="email" 
-        placeholder="Entrez votre adresse mail..." 
-        required
-      >
-
-      <textarea 
-        name="message" 
-        placeholder="Décrivez-nous votre besoin..." 
-        rows="5"
-        required
-      ></textarea>
-
-      <button type="submit">
-        Envoyer
-      </button>
-
-    </form>
-
-  </div>
-</section>
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
