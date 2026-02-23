@@ -1,16 +1,19 @@
 @font-face {
   font-family: "Raleway Thin";
   src: url("../public/fonts/raleway.thin.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Raleway Regular";
   src: url("../public/fonts/raleway.regular.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Raleway Semi-Bold";
   src: url("../public/fonts/raleway.semibold.woff2") format("woff2");
+  font-display: swap;
 }
 
 * {
