@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nos productions</title>
+    <link href="../../styles/globals.css" rel="stylesheet" />
+    <link href="../../styles/navbar.css" rel="stylesheet" />
+    <link href="../../styles/contact.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="main-nav">
+      <img src="../../public/LogoP.webp" alt="Logo de l'Atelier du Savoir" />
+
+      <button
+        class="burger-btn"
+        id="burger"
+        aria-label="Menu"
+        aria-expanded="false"
+      >
+        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <path class="line line-top" d="M 6 14 L 42 14" />
+          <path class="line line-mid" d="M 6 24 L 42 24" />
+          <path class="line line-bot" d="M 6 34 L 42 34" />
+        </svg>
+      </button>
+
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/pages/methode">Notre méthode</a></li>
+        <li><a href="/pages/productions">Nos productions</a></li>
+        <li><a href="/pages/equipe">Notre équipe</a></li>
+        <li><a href="/pages/contact" class="active">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="contact">
+      <div class="contact-container">
+        <h2 class="contact-title">
+          Vous souhaitez être contacté par notre équipe ?
+        </h2>
+
+        <p class="contact-subtitle">
+          Un projet, un devis, une question, une demande particulière…
+        </p>
+
+        <form class="contact-form">
+          <input
+            type="email"
+            name="email"
+            placeholder="Entrez votre adresse mail..."
+            required
+          />
+
+          <textarea
+            name="message"
+            placeholder="Décrivez-nous votre besoin..."
+            rows="5"
+            required
+          ></textarea>
+
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </section>
+    <script src="../scripts/burger-menu.js"></script>
+  </body>
+</html>
