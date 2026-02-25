@@ -36,34 +36,52 @@
     </nav>
 
     <section class="contact">
-      <div class="contact-container">
-        <h2 class="contact-title">
-          Vous souhaitez être contacté par notre équipe ?
-        </h2>
 
-        <p class="contact-subtitle">
-          Un projet, un devis, une question, une demande particulière…
-        </p>
+  <div class="contact-container">
 
-        <form class="contact-form">
-          <input
-            type="email"
-            name="email"
-            placeholder="Entrez votre adresse mail..."
-            required
-          />
+    <h1 class="contact-title">
+      Vous souhaitez être contacté par notre équipe ?
+    </h1>
 
-          <textarea
-            name="message"
-            placeholder="Décrivez-nous votre besoin..."
-            rows="5"
-            required
-          ></textarea>
+    <p class="contact-subtitle">
+      Un projet, un devis, une question, une demande particulière…
+    </p>
 
-          <button type="submit">Envoyer</button>
-        </form>
-      </div>
-    </section>
+    <form 
+      class="contact-form"
+      id="contactForm"
+      action="https://formspree.io/f/mojnyjqo"
+      method="POST"
+    >
+
+      <input type="hidden" name="_subject" value="Nouvelle demande - Page Contact" />
+      <input type="text" name="_gotcha" style="display:none">
+
+      <input
+        type="email"
+        name="email"
+        placeholder="Entrez votre adresse mail..."
+        required
+      />
+
+      <textarea
+        name="message"
+        rows="5"
+        placeholder="Décrivez-nous votre besoin..."
+        required
+      ></textarea>
+
+      <button type="submit">Envoyer</button>
+
+      <p class="contact-success" id="contactMessage"></p>
+
+    </form>
+
+  </div>
+
+</section>
+
     <script src="../../scripts/burger-menu.js"></script>
+    <script src="../../scripts/contact.js"></script>
   </body>
 </html>
