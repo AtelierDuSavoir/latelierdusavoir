@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nos productions</title>
+    <title>Nos productions - Atelier du Savoir</title>
     <link href="../../styles/globals.css" rel="stylesheet" />
     <link href="../../styles/navbar.css" rel="stylesheet" />
     <link href="../../styles/productions.css" rel="stylesheet" />
@@ -11,7 +11,8 @@
   </head>
   <body>
     <nav class="main-nav">
-      <img src="../../public/LogoP.webp" alt="Logo de l'Atelier du Savoir" />
+      <a href="/">
+      <img src="../../public/LogoP.webp" alt="Logo de l'Atelier du Savoir" /></a>
 
       <button
         class="burger-btn"
@@ -328,33 +329,52 @@
         <h2>Vous souhaitez être contacté par notre équipe ?</h2>
         <p>Un projet, un devis, une question, une demande particulière…</p>
 
-        <form class="footer-form">
-          <input
-            type="email"
-            placeholder="Entrez votre adresse mail…"
-            required
-          />
-          <button type="submit">Envoyer</button>
-        </form>
-      </div>
+        <form 
+  class="footer-form"
+  action="https://formspree.io/f/mojnyjqo"
+  method="POST"
+  id="footerContactForm"
+>
 
-      <div class="footer-bottom">
+  <input type="hidden" name="_subject" value="Nouvelle demande - Footer Site" />
+
+  <input type="text" name="_gotcha" style="display:none">
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Entrez votre adresse mail…"
+    required
+  />
+
+  <button type="submit">Envoyer</button>
+  
+
+</form>
+
+<p class="form-message" id="footerMessage"></p>
+
+<div class="footer-bottom">
         <img
           src="../../public/LogoBlanc.webp"
           alt="L'Atelier du Savoir"
           class="footer-logo"
         />
 
+
         <nav class="footer-nav">
           <a href="/">Accueil</a>
-          <a href="/pages/methode.html">Notre méthode</a>
-          <a href="/pages/productions.html">Nos productions</a>
-          <a href="/pages/equipe.html">Notre équipe</a>
-          <a href="/pages/contact.html">Contact</a>
-          <a href="/pages/mentions-legales.html">Mentions légales</a>
+          <a href="/pages/methode/index.html">Notre méthode</a>
+          <a href="/pages/productions/index.html">Nos productions</a>
+          <a href="/pages/equipe/index.html">Notre équipe</a>
+          <a href="/pages/contact/index.html">Contact</a>
+          <a href="/pages/mentions-legales/index.html">Mentions légales</a>
         </nav>
       </div>
     </footer>
     <script src="../../scripts/burger-menu.js"></script>
+    <script src="../../scripts/contact.js" defer></script>
+   
+    
   </body>
 </html>
