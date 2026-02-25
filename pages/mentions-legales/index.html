@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentions légales - Atelier du Savoir</title>
+    <link href="../../styles/globals.css" rel="stylesheet" />
+    <link href="../../styles/navbar.css" rel="stylesheet" />
+    <link href="../../styles/mentions.css" rel="stylesheet" />
+    <link href="../../styles/footer.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="main-nav">
+      <a href="/">
+      <img src="../../public/LogoP.webp" alt="Logo de l'Atelier du Savoir" /></a>
+
+      <button
+        class="burger-btn"
+        id="burger"
+        aria-label="Menu"
+        aria-expanded="false"
+      >
+        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <path class="line line-top" d="M 6 14 L 42 14" />
+          <path class="line line-mid" d="M 6 24 L 42 24" />
+          <path class="line line-bot" d="M 6 34 L 42 34" />
+        </svg>
+      </button>
+
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/pages/methode">Notre méthode</a></li>
+        <li>
+          <a href="/pages/productions" class="active">Nos productions</a>
+        </li>
+        <li><a href="/pages/equipe">Notre équipe</a></li>
+        <li><a href="/pages/contact">Contact</a></li>
+      </ul>
+    </nav>
+
+<section class="legal-section">
+    <div class="legal-container">
+
+      <h1>Mentions légales</h1>
+      <p class="legal-date">En vigueur au 01/11/2024</p>
+
+      <div class="legal-content">
+
+        <h2>Article 1 – L’Éditeur</h2>
+
+        <p>
+          L’édition du site <strong>latelierdusavoir.com</strong> est assurée par la
+          société <strong>SAS L’Atelier du Savoir</strong>, au capital de 1 euro,
+          immatriculée au Registre du Commerce et des Sociétés.
+        </p>
+
+        <p>
+          <strong>Siège social :</strong> 6 avenue d’Aléry, 74000 Annecy<br>
+          <strong>Email :</strong> contact@latelierdusavoir.com<br>
+          <strong>SIREN :</strong> 934 934 670<br>
+          <strong>TVA intracommunautaire :</strong> FR37934934670
+        </p>
+
+        <p>
+          Le Directeur de la publication est Mme THOMAS.
+        </p>
+
+        <h2>Article 2 – Hébergement</h2>
+
+        <p>
+          Le site est hébergé par GitHub Pages,
+          88 Colin P Kelly Jr St, San Francisco, CA 94107, USA.
+        </p>
+
+        <h2>Article 3 – Accès au site</h2>
+
+        <p>
+          Le site est accessible 24h/24, 7j/7 sauf cas de force majeure,
+          interruption programmée ou non et pouvant découler d’une nécessité
+          de maintenance.
+        </p>
+
+        <h2>Article 4 – Propriété intellectuelle</h2>
+
+        <p>
+          L’ensemble des éléments présents sur le site
+          (textes, images, graphismes, logo, vidéos, etc.)
+          sont protégés par le Code de la propriété intellectuelle.
+        </p>
+
+        <p>
+          Toute reproduction, représentation, modification ou exploitation
+          sans autorisation écrite préalable est strictement interdite.
+        </p>
+
+        <h2>Article 5 – Données personnelles</h2>
+
+        <p>
+          Les informations collectées via le formulaire de contact
+          sont utilisées uniquement dans le cadre de la relation commerciale.
+        </p>
+
+        <p>
+          Conformément au RGPD, vous pouvez exercer vos droits d’accès,
+          de rectification ou de suppression en écrivant à
+          contact@latelierdusavoir.com.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+        
+
+    <footer class="footer">
+      <div class="footer-cta">
+        <h2>Vous souhaitez être contacté par notre équipe ?</h2>
+        <p>Un projet, un devis, une question, une demande particulière…</p>
+
+        <form 
+  class="footer-form"
+  action="https://formspree.io/f/mojnyjqo"
+  method="POST"
+  id="footerContactForm"
+>
+
+  <!-- Sujet email -->
+  <input type="hidden" name="_subject" value="Nouvelle demande - Footer Site" />
+
+  <!-- Honeypot anti-spam -->
+  <input type="text" name="_gotcha" style="display:none">
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Entrez votre adresse mail…"
+    required
+  />
+
+  <button type="submit">Envoyer</button>
+
+</form>
+
+<!-- Message de confirmation sous le formulaire -->
+<p class="form-message" id="footerMessage"></p>
+
+      </div>
+
+      <div class="footer-bottom">
+        <img
+          src="../public/LogoBlanc.webp"
+          alt="L'Atelier du Savoir"
+          class="footer-logo"
+        />
+
+        <nav class="footer-nav">
+          <a href="/">Accueil</a>
+          <a href="/notre-methode.html">Notre méthode</a>
+          <a href="/nos-productions.html">Nos productions</a>
+          <a href="/notre-equipe.html">Notre équipe</a>
+          <a href="/contact.html">Contact</a>
+          <a href="/mentions-legales.html">Mentions légales</a>
+        </nav>
+      </div>
+    </footer>
+    <script src="../scripts/burger-menu.js"></script>
+    <script src="/scripts/contact.js" defer></script>
+  </body>
+</html>

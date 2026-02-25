@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>L'Atelier des Savoirs - Méthodes</title>
+    <title>Notre méthode - Atelier du Savoir</title>
     <link
       rel="shortcut icon"
       href="../public/favicon.ico"
@@ -17,7 +17,8 @@
   </head>
   <body>
     <nav class="main-nav">
-      <img src="../../public/LogoP.webp" alt="Logo de l'Atelier du Savoir" />
+      <a href="/">
+      <img src="../../public/LogoP.webp" alt="Logo de l'Atelier du Savoir" /></a>
 
       <button
         class="burger-btn"
@@ -243,14 +244,32 @@
         <h2>Vous souhaitez être contacté par notre équipe ?</h2>
         <p>Un projet, un devis, une question, une demande particulière…</p>
 
-        <form class="footer-form">
-          <input
-            type="email"
-            placeholder="Entrez votre adresse mail…"
-            required
-          />
-          <button type="submit">Envoyer</button>
-        </form>
+       <form 
+  class="footer-form"
+  action="https://formspree.io/f/mojnyjqo"
+  method="POST"
+  id="footerContactForm"
+>
+
+  <!-- Sujet email -->
+  <input type="hidden" name="_subject" value="Nouvelle demande - Footer Site" />
+
+  <!-- Honeypot anti-spam -->
+  <input type="text" name="_gotcha" style="display:none">
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Entrez votre adresse mail…"
+    required
+  />
+
+  <button type="submit">Envoyer</button>
+
+</form>
+
+<!-- Message de confirmation sous le formulaire -->
+<p class="form-message" id="footerMessage"></p>
       </div>
 
       <div class="footer-bottom">
@@ -273,5 +292,6 @@
     <script src="../scripts/animations.js"></script>
     <script src="../scripts/burger-menu.js"></script>
     <script src="../scripts/scrollbar.js"></script>
+    <script src="/scripts/contact.js" defer></script>
   </body>
 </html>
