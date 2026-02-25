@@ -117,17 +117,15 @@
         <h2>Vous souhaitez être contacté par notre équipe ?</h2>
         <p>Un projet, un devis, une question, une demande particulière…</p>
 
-        <form 
+       <form 
   class="footer-form"
   action="https://formspree.io/f/mojnyjqo"
   method="POST"
   id="footerContactForm"
 >
 
-  <!-- Sujet email -->
   <input type="hidden" name="_subject" value="Nouvelle demande - Footer Site" />
 
-  <!-- Honeypot anti-spam -->
   <input type="text" name="_gotcha" style="display:none">
 
   <input
@@ -141,29 +139,26 @@
 
 </form>
 
-<!-- Message de confirmation sous le formulaire -->
 <p class="form-message" id="footerMessage"></p>
-
-      </div>
 
       <div class="footer-bottom">
         <img
-          src="../public/LogoBlanc.webp"
+          src="../../public/LogoBlanc.webp"
           alt="L'Atelier du Savoir"
           class="footer-logo"
         />
 
         <nav class="footer-nav">
           <a href="/">Accueil</a>
-          <a href="/notre-methode.html">Notre méthode</a>
-          <a href="/nos-productions.html">Nos productions</a>
-          <a href="/notre-equipe.html">Notre équipe</a>
-          <a href="/contact.html">Contact</a>
-          <a href="/mentions-legales.html">Mentions légales</a>
+          <a href="/pages/methode/index.html">Notre méthode</a>
+          <a href="/pages/productions/index.html">Nos productions</a>
+          <a href="/pages/equipe/index.html">Notre équipe</a>
+          <a href="/pages/contact/index.html">Contact</a>
+          <a href="/pages/mentions-legales/index.html">Mentions légales</a>
         </nav>
       </div>
     </footer>
     <script src="../../scripts/burger-menu.js"></script>
-    <script src="/scripts/contact.js" defer></script>
+    <script src="../../scripts/contact.js" defer></script>
   </body>
 </html>
