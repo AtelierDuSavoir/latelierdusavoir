@@ -1,6 +1,3 @@
-/* ============================= */
-/* ========= CONTACT =========== */
-/* ============================= */
 
 .contact {
   min-height: calc(100vh-70px);
@@ -50,7 +47,7 @@
   border-radius: 8px;
   border: 1px solid #222;
   background: #efefef;
-  color: #fff;
+  color: #000000;
   font-size: 16px;
   font-family: inherit;
   transition: all 0.3s ease;
@@ -100,4 +97,20 @@
 .contact-form button:hover {
   transform: translateY(-3px);
   box-shadow: 0 15px 35px rgba(239,190,40,0.25);
+}
+
+.contact-success {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #6ea87d;
+  display: none;
+}
+
+button.sent {
+  background: #6ea87d !important;
+  color: #fff;
+  cursor: default;
+  transform: none !important;
+  box-shadow: none !important;
+  opacity: 0.9;
 }
