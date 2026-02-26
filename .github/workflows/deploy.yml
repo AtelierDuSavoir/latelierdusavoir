@@ -30,6 +30,11 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Minify CSS
+        run: |
+          npm install -g clean-css-cli
+          cleancss -o docs/styles/bundle.css docs/styles/bundle.css
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
