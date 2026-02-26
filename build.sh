@@ -25,14 +25,14 @@ log()   { echo -e "${GREEN}[BUILD]${NC} $1"; }
 error() { echo -e "${RED}[ERROR]${NC} $1"; exit 1; }
 
 # ──────────────────────────────────────────────
-# VÉRIFICATION
+# VÉRIFICATION DE L'EXISTENCE DU FICHIER INDEX.HTML
 # ──────────────────────────────────────────────
 if [ ! -f "index.html" ]; then
   error "index.html introuvable. Lance ce script depuis la racine du projet."
 fi
 
 # ──────────────────────────────────────────────
-# NETTOYAGE ET COPIE
+# NETTOYAGE ET COPIE DES FICHIERS
 # ──────────────────────────────────────────────
 log "Nettoyage de $DIST_DIR/..."
 rm -rf "$DIST_DIR"
