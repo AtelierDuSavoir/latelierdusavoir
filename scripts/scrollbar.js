@@ -1,7 +1,6 @@
 const main = document.querySelector("main");
 
 function updateMainHeight() {
-  console.log("On recalcule, s'il vous plait");
   main.style.setProperty("--main-height", `${main.offsetHeight}px`);
 }
 

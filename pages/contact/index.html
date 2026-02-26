@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - Atelier du Savoir</title>
+    <link
+      rel="shortcut icon"
+      href="../../public/favicon.ico"
+      type="image/x-icon"
+    />
     <link href="../../styles/globals.css" rel="stylesheet" />
     <link href="../../styles/navbar.css" rel="stylesheet" />
     <link href="../../styles/contact.css" rel="stylesheet" />
@@ -11,7 +16,8 @@
   <body>
     <nav class="main-nav">
       <a href="/">
-      <img src="../../public/LogoP.webp" alt="Logo de l'Atelier du Savoir" /></a>
+        <img src="../../public/LogoP.webp" alt="Logo de l'Atelier du Savoir"
+      /></a>
 
       <button
         class="burger-btn"
@@ -36,50 +42,48 @@
     </nav>
 
     <section class="contact">
+      <div class="contact-container">
+        <h1 class="contact-title">
+          Vous souhaitez être contacté par notre équipe ?
+        </h1>
 
-  <div class="contact-container">
+        <p class="contact-subtitle">
+          Un projet, un devis, une question, une demande particulière…
+        </p>
 
-    <h1 class="contact-title">
-      Vous souhaitez être contacté par notre équipe ?
-    </h1>
+        <form
+          class="contact-form"
+          id="contactForm"
+          action="https://formspree.io/f/mojnyjqo"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="_subject"
+            value="Nouvelle demande - Page Contact"
+          />
+          <input type="text" name="_gotcha" style="display: none" />
 
-    <p class="contact-subtitle">
-      Un projet, un devis, une question, une demande particulière…
-    </p>
+          <input
+            type="email"
+            name="email"
+            placeholder="Entrez votre adresse mail..."
+            required
+          />
 
-    <form 
-      class="contact-form"
-      id="contactForm"
-      action="https://formspree.io/f/mojnyjqo"
-      method="POST"
-    >
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Décrivez-nous votre besoin..."
+            required
+          ></textarea>
 
-      <input type="hidden" name="_subject" value="Nouvelle demande - Page Contact" />
-      <input type="text" name="_gotcha" style="display:none">
+          <button type="submit">Envoyer</button>
 
-      <input
-        type="email"
-        name="email"
-        placeholder="Entrez votre adresse mail..."
-        required
-      />
-
-      <textarea
-        name="message"
-        rows="5"
-        placeholder="Décrivez-nous votre besoin..."
-        required
-      ></textarea>
-
-      <button type="submit">Envoyer</button>
-
-      <p class="contact-success" id="contactMessage"></p>
-
-    </form>
-
-  </div>
-
-</section>
+          <p class="contact-success" id="contactMessage"></p>
+        </form>
+      </div>
+    </section>
 
     <script src="../../scripts/burger-menu.js"></script>
     <script src="../../scripts/contact.js"></script>
