@@ -51,6 +51,26 @@ for folder in "${FOLDERS[@]}"; do
 done
 
 # ──────────────────────────────────────────────
+# CONCATENATION
+# ──────────────────────────────────────────────
+
+cat "$DIST_DIR/styles/globals.css" > "$DIST_DIR/styles/bundle.tmp.css"
+find "$DIST_DIR/styles/" -name "*.css" ! -name "globals.css" ! -name "bundle.tmp.css" \
+  | sort \
+  | xargs cat >> "$DIST_DIR/styles/bundle.tmp.css"
+mv "$DIST_DIR/styles/bundle.tmp.css" "$DIST_DIR/styles/bundle.css"
+
+# Supprime les fichiers CSS individuels
+find "$DIST_DIR/styles/" -name "*.css" ! -name "bundle.css" -delete
+
+find "$DIST_DIR" -name "*.html" | while read -r file; do
+  perl -i -0pe '
+    s/<link[^>]*href=[^>]*styles[^>]*>\n?//g;
+    s|</head>|\n  <link rel="preload" href="/styles/bundle.css" as="style">\n  <link rel="stylesheet" href="/styles/bundle.css">\n</head>|
+  ' "$file"
+done
+
+# ──────────────────────────────────────────────
 # CNAME (domaine personnalisé GitHub Pages)
 # ──────────────────────────────────────────────
 log "Création du fichier CNAME..."
