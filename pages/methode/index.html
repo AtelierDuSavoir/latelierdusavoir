@@ -6,7 +6,7 @@
     <title>Notre méthode - Atelier du Savoir</title>
     <link
       rel="shortcut icon"
-      href="../public/favicon.ico"
+      href="../../public/favicon.ico"
       type="image/x-icon"
     />
     <link href="../../styles/globals.css" rel="stylesheet" />
@@ -18,7 +18,8 @@
   <body>
     <nav class="main-nav">
       <a href="/">
-      <img src="../../public/LogoP.webp" alt="Logo de l'Atelier du Savoir" /></a>
+        <img src="../../public/LogoP.webp" alt="Logo de l'Atelier du Savoir"
+      /></a>
 
       <button
         class="burger-btn"
@@ -244,29 +245,31 @@
         <h2>Vous souhaitez être contacté par notre équipe ?</h2>
         <p>Un projet, un devis, une question, une demande particulière…</p>
 
-       <form 
-  class="footer-form"
-  action="https://formspree.io/f/mojnyjqo"
-  method="POST"
-  id="footerContactForm"
->
+        <form
+          class="footer-form"
+          action="https://formspree.io/f/mojnyjqo"
+          method="POST"
+          id="footerContactForm"
+        >
+          <input
+            type="hidden"
+            name="_subject"
+            value="Nouvelle demande - Footer Site"
+          />
 
-  <input type="hidden" name="_subject" value="Nouvelle demande - Footer Site" />
+          <input type="text" name="_gotcha" style="display: none" />
 
-  <input type="text" name="_gotcha" style="display:none">
+          <input
+            type="email"
+            name="email"
+            placeholder="Entrez votre adresse mail…"
+            required
+          />
 
-  <input
-    type="email"
-    name="email"
-    placeholder="Entrez votre adresse mail…"
-    required
-  />
+          <button type="submit">Envoyer</button>
+        </form>
 
-  <button type="submit">Envoyer</button>
-
-</form>
-
-<p class="form-message" id="footerMessage"></p>
+        <p class="form-message" id="footerMessage"></p>
       </div>
 
       <div class="footer-bottom">
