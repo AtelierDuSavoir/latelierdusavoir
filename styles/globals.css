@@ -42,3 +42,70 @@ a {
 .active {
   color: #efbe28;
 }
+
+/* ============================= */
+/* HERO */
+/* ============================= */
+
+.hero {
+  height: calc(100vh - 100px);
+  min-height: 650px;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 8%;
+  color: #ffffff;
+}
+
+.hero.accueil {
+  background: url("../public/images/banner/accueil.webp") center right / cover
+    no-repeat;
+}
+
+.hero.equipe {
+  background: url("../public/images/banner/equipe.webp") center right / cover
+    no-repeat;
+}
+
+.hero.methode {
+  background: url("../public/images/banner/methode.webp") center right / cover
+    no-repeat;
+}
+
+.hero.productions {
+  background: url("../public/images/banner/productions.webp") center right /
+    cover no-repeat;
+}
+
+/* ============================= */
+/* BANNER */
+/* ============================= */
+
+.hero-content {
+  max-width: 650px;
+}
+
+/* ============================= */
+/* BANNER TITLE */
+/* ============================= */
+
+.hero-title {
+  font-size: 50px;
+  font-weight: 450;
+  line-height: 1.4;
+  letter-spacing: -0.5px;
+  margin-bottom: 20px;
+}
+
+/* ============================= */
+/* BANNER SUBTITLE */
+/* ============================= */
+
+.hero-subtitle {
+  font-size: 26px;
+  font-family: "Raleway Thin";
+  line-height: 1.7;
+  margin-bottom: 55px;
+  opacity: 0.8;
+}
