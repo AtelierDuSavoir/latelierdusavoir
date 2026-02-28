@@ -1,51 +1,3 @@
-/* ============================= */
-/* HERO */
-/* ============================= */
-
-.hero {
-  height: calc(100vh - 70px);
-
-  background: url("../public/equipe.webp") center right / cover no-repeat;
-
-  display: flex;
-  align-items: center;
-
-  padding-left: 8%;
-  color: #ffffff;
-}
-
-/* ============================= */
-/* CONTENT */
-/* ============================= */
-
-.hero-content {
-  max-width: 650px;
-}
-
-/* ============================= */
-/* TITLE */
-/* ============================= */
-
-.hero-title {
-  font-size: 50px;
-  font-weight: 450;
-  line-height: 1.4;
-  letter-spacing: -0.5px;
-  margin-bottom: 20px;
-}
-
-/* ============================= */
-/* SUBTITLE */
-/* ============================= */
-
-.hero-subtitle {
-  font-size: 26px;
-  font-weight: 90;
-  line-height: 1.7;
-  margin-bottom: 55px;
-  opacity: 0.8;
-}
-
 /* SECTION */
 .founders {
   padding: 120px 0;
@@ -146,7 +98,6 @@
 /* ============================= */
 
 @media (max-width: 1024px) {
-
   .founders-team {
     gap: 60px;
   }
@@ -159,7 +110,6 @@
   .founders-title {
     font-size: 30px;
   }
-
 }
 
 /* ============================= */
@@ -167,7 +117,6 @@
 /* ============================= */
 
 @media (max-width: 768px) {
-
   .founders {
     padding: 80px 0;
   }
@@ -209,7 +158,6 @@
     top: -30px;
     left: 0;
   }
-
 }
 
 /* ============================= */
