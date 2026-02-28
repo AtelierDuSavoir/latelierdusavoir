@@ -1,68 +1,56 @@
-/* ================================= */
-/* FOOTER FULL SCREEN */
-/* ================================= */
-
+/* FOOTER */
 .footer {
   min-height: 100vh;
   background: #0a0a0a;
-  color: #ffffff;
-
+  color: #fff;
   display: flex;
   flex-direction: column;
-
-  padding: 100px 8% 60px 8%;
+  padding: 100px 8% 60px;
 }
 
-/* ================================= */
-/* CTA SECTION (CENTRÉE) */
-/* ================================= */
-
+/* CTA */
 .footer-cta {
-  flex: 1; /* prend l’espace disponible */
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   text-align: center;
   max-width: 900px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .footer-cta h2 {
-  font-size: 34px;
+  font-size: clamp(22px, 4vw, 34px);
   font-weight: 500;
   margin-bottom: 20px;
   line-height: 1.3;
 }
 
 .footer-cta p {
-  font-size: 18px;
+  font-size: clamp(15px, 2vw, 18px);
   font-weight: 300;
   opacity: 0.6;
   margin-bottom: 50px;
 }
 
-/* ================================= */
 /* FORMULAIRE */
-/* ================================= */
-
 .footer-form {
   width: 100%;
-  max-width: 750px;
-
   display: flex;
-  background: #ffffff;
+  flex-wrap: wrap;
+  background: #fff;
   border-radius: 6px;
   overflow: hidden;
 }
 
 .footer-form input {
   flex: 1;
+  min-width: 200px;
   padding: 22px 25px;
   border: none;
   outline: none;
-
   font-size: 16px;
 }
 
@@ -71,44 +59,42 @@
 }
 
 .footer-form button {
-  padding: 0 45px;
+  padding: 18px 35px;
   border: none;
-
   background: #f2f2f2;
   color: #111;
-
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
+  transition: background 0.3s ease;
+  white-space: nowrap;
 
-  transition: all 0.3s ease;
+  @media (width < 387px) {
+    width: 100%;
+  }
 }
 
 .footer-form button:hover {
   background: #e5e5e5;
 }
 
-/* ================================= */
-/* BOTTOM (LOGO + NAV) */
-/* ================================= */
-
+/* BOTTOM */
 .footer-bottom {
   text-align: center;
   margin-top: 40px;
 }
 
 .footer-logo {
-  width: 180px;
+  width: clamp(120px, 20vw, 180px);
   margin-bottom: 35px;
+  object-fit: contain;
 }
-
-/* Navigation */
 
 .footer-nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 35px;
+  gap: 20px 35px;
 }
 
 .footer-nav a {
@@ -116,33 +102,33 @@
   text-decoration: none;
   font-size: 14px;
   font-weight: 300;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .footer-nav a:hover {
-  color: #ffffff;
+  color: #fff;
 }
 
+/* MESSAGE */
 .form-message {
   margin-top: 20px;
   font-size: 16px;
   font-weight: 500;
   text-align: center;
-
   opacity: 0;
   transform: translateY(8px);
-  transition: all 0.4s ease;
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
 }
 
 .form-message.show {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
-
 .form-message.success {
-  color: #8dbb8f; 
+  color: #8dbb8f;
 }
-
 .form-message.error {
   color: #e57373;
 }
