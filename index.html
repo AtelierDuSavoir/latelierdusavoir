@@ -391,8 +391,13 @@
           />
 
           <!-- Honeypot anti-spam -->
-          <input type="text" name="_gotcha" class="sr-only" />
-
+          <input
+            type="text"
+            name="_gotcha"
+            class="sr-only"
+            aria-hidden="true"
+            tabindex="-1"
+          />
           <label for="email" class="sr-only">Adresse email</label>
           <input
             type="email"
